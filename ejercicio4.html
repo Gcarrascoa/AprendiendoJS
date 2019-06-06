@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Los objetos son variables también. 
+        Pero los objetos pueden contener muchos valores. -->
+    <script>
+        var car = 
+        {
+            type : "Fiat",
+            model : "500",
+            color : "white"
+        };
+        // Los valores se escriben como 
+        // pares nombre: valor (nombre y valor separados por dos puntos).
+        var persona = 
+        {
+            primerNombre : "Juan",
+            segundoNombre : "Luis",
+            edad : 50,
+            colorDeOjos : "Azul",
+            nombreCompleto : function(){
+                return this.primerNombre+" "+this.segundoNombre;
+                // En una definición de función, this refiere al "propietario" de la función.
+            }
+        };
+        // Acceso a la propiedad : 
+        // objectName.propertyName
+        // o objectName["propertyName"]
+        console.log(persona.primerNombre);
+        console.log(persona.segundoNombre);
+        console.log(persona.nombreCompleto());
+
+        // Los objetos también pueden tener métodos .
+        // Los métodos son acciones que se pueden realizar en objetos.
+        // Los métodos se almacenan en propiedades como definiciones de funciones .    
+    </script>
+</body>
+</html>

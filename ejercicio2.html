@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Este ejemplo utiliza el método para "encontrar" un elemento 
+        HTML (con id = "demo") y cambia el contenido del elemento ( innerHTML ) -->
+    <p id="contenido">Este contenido sera cambiado</p>
+    <button type="button" onclick="document.getElementById('contenido').innerHTML='El contenido fue cambiado' ">Cliqueame!</button>
+        <!-- Se puede ocultar los elementos HTML cambiando el display estilo
+        También se puede mostrar elementos HTML ocultos cambiando el displayestilo: -->
+        <p id="demo">JavaScript puede ocultar elementos</p>
+        <button type="button" onclick="document.getElementById('demo').style.display='none'">Ocultar</button>
+        <button type="button" onclick="document.getElementById('demo').style.display='block'">Mostrar</button>
+</body>
+</html>

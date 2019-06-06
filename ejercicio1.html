@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenido"></div>
+    <script>
+        // Creacion de variable
+        var nombre = prompt ("¿Cual es tu nombre?")
+        document.getElementById("contenido").innerHTML = 
+        `Mi nombre es ${nombre} y me dicen Cloud`
+        // Formas de interactuar con la consola del navegador
+        console.log("El nombre de la variables es " + nombre);
+        console.time("Hola"); //Calcula el tiempo en ejecutar esta linea :inicio
+        console.error("Hubo un error!");
+        console.warn("CUIDADO");
+        console.timeEnd("Hola"); //Calcula el tiempo en ejecutar esta linea :fin
+    </script>
+</body>
+</html>
